@@ -1,0 +1,14 @@
+.content-section {
+  width: 1200px;
+  height: 624px;
+  margin: 276px auto 0 auto; /* Top: 276px, Horizontal: auto, Bottom: 0 */
+  border-radius: 24px;
+  border: 2px solid #333;    /* Note: Border needs a style and color to be visible */
+  padding: 40px;
+  gap: 10px;
+  display: flex;             /* Gap only works if display is flex or grid */
+  flex-direction: column;    /* Stack children vertically by default */
+  
+  /* Removed 'left' as it interferes with margin: auto centering */
+  position: relative;
+}

@@ -1,0 +1,57 @@
+.gradient-pill-button {
+  width: 267px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Layout */
+  margin: 0 auto 20px auto; 
+  
+  border: 2px solid transparent;
+  border-radius: 56px;
+  background-image: 
+    linear-gradient(#0a0e4a, #0a0e4a), 
+    linear-gradient(to right, #923cb5, #00d2ff, #baff00);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  font-weight: 600;     
+  font-size: 72px;
+  line-height: 1.5;      
+  letter-spacing: 0px;
+  text-align: center;
+  color: white;
+  margin: 0;            
+}
+
+.hero-text {
+  color: yellow;
+  font-weight: 600;        
+  font-size: 72px;
+  line-height: 1.5;        
+  letter-spacing: 0px;
+  text-align: center;
+  font-style: italic;
+  font-family: 'Playfair Display', serif; 
+}
+
+.description-text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;         
+  letter-spacing: normal; 
+  text-align: center;
+  color: #d0d0dd;         
+  margin-bottom: 30px;
+  margin-top: 0;         
+}

@@ -1,0 +1,29 @@
+.main {
+  width: 1824px;
+  height: 80px;
+  padding-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  left: 48px;
+  border-radius: 250px;
+  gap: 10px;
+  margin-bottom: 100px;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.button {
+  background-color: #dd2c91;
+  width: 161px;
+  height: 48px;
+  border-radius: 30px; 
+  padding: 12px 24px; 
+  color: white;
+  cursor: pointer;
+  border: none;    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
