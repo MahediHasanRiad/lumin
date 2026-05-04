@@ -14,15 +14,15 @@ function Working() {
 
       {/* title section  */}
       <TitleDescription
-        test={"How it"}
+        text={"How it"}
         highlighed={"Work"}
         description={"Start Bingeing in 3 Simple Steps"}
       />
 
       {/* info part  */}
-      <section className="grid grid-cols-2 gap-y-12 relative mx-auto py-10">
+      <section className="grid md:grid-cols-2 md:gap-y-12 relative mx-auto md:py-10">
         {/* The Vertical Dashed Line */}
-        <div className="absolute left-1/2 top-0 bottom-0 border-l-2 border-dashed border-pink-500 transform -translate-x-1/2 z-0" />
+        <div className="hidden md:block absolute left-1/2 top-0 bottom-0 border-l-2 border-dashed border-pink-500 transform -translate-x-1/2 z-0" />
 
         {/* Left Column */}
         <div className="col-start-1 pr-12">
@@ -33,11 +33,11 @@ function Working() {
           />
         </div>
 
-        {/* Spacer for Step 1 Right Side */}
-        <div className="col-start-2" />
+        {/* Step 1 Right Side */}
+        <div className="col-start-2 hidden md:block" />
 
-        {/* Spacer for Step 2 Left Side */}
-        <div className="col-start-1" />
+        {/* Step 2 Left Side */}
+        <div className="col-start-1 hidden md:block" />
 
         {/* Step 2: Right Column */}
         <div className="col-start-2 pl-12">

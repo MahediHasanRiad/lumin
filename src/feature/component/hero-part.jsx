@@ -11,11 +11,11 @@ function HeroPart() {
 
       {/* heading text  */}
       <div style={{ marginBottom: "20px", width: '60%', margin: 'auto' }}>
-        <p className="hero-title">Cinematic Stories, Right in</p>
-        <p className="hero-text">Your Pocket.</p>
+        <p className="hero-title-text">Cinematic Stories, Right in</p>
+        <p className="hero-heighlited-text">Your Pocket.</p>
 
         {/* heading description  */}
-        <p className="description-text">
+        <p className="hero-description-text">
           Binge-watch high-quality short drama series anytime, anywhere. From
           romance to thrillers, experience stories that keep you on the edge.
         </p>

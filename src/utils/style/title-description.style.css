@@ -1,11 +1,12 @@
-.title-part {
-  font-size: clamp(20px, 30vw, 48px);
+.working-info-title {
+  font-size: clamp(28px, 30vw, 48px);
   font-weight: 600;
   margin: 0 auto;
+  color: white;
 }
 
-.highlighted-word {
-  font-size: clamp(20px, 8vm, 40px);
+.working-info-highlighted-word {
+  font-size: clamp(28px, 8vm, 40px);
   font-weight: 400;
   margin: 0 auto;
   color: #ffe202;
@@ -13,8 +14,9 @@
   font-family: Playfair Display;
 }
 
-.description-part {
-  font-size: 30px;
+.working-info-description {
+  font-size: clamp(14px, 4vm, 30px);
   font-weight: 400;
-  color: gray;
+  color: rgb(208, 206, 206);
+  margin: 5px 0px;
 }

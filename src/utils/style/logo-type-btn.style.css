@@ -5,10 +5,7 @@
   padding: 2px 22px;
   align-items: center;
   justify-content: center;
-  
-  /* Layout */
   margin: 0 auto 20px auto; 
-  
   border: 2px solid transparent;
   border-radius: 56px;
   background-image: 
@@ -16,10 +13,8 @@
     linear-gradient(to right, #923cb5, #00d2ff, #baff00);
   background-origin: border-box;
   background-clip: padding-box, border-box;
-
-
   color: white;
-  font-size: clamp(10px, 1.2vw, 14px);
+  font-size: clamp(9px, 1.2vw, 14px);
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;

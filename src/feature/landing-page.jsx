@@ -5,24 +5,19 @@ import Streaming from "./component/streaming";
 import Working from "./component/working";
 import Experience from "./component/experience";
 import MobileScreen from "./component/mobile-screen";
+import Footer from "./component/footer";
 import "./style/landing-page.style.css";
 
 function LandingPage() {
   return (
     <section className="hero-container">
-      <div className="glow-wrapper">
-        <div className="glow-pink" />
-        <div className="glow-blue" />
-        <div className="glow-noise" />
-      </div>
-      <div className="hero-content">
         <HeaderPart />
         <HeroPart />
         <MobileScreen />
         <Streaming />
         <Working />
         <Experience />
-      </div>
+        <Footer />
     </section>
   );
 }

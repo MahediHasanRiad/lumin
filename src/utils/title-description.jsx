@@ -1,13 +1,13 @@
 import './style/title-description.style.css';
 
-function TitleDescription({test, highlighed, description}) {
+function TitleDescription({text, highlighed, description}) {
   return (
     <section className='mx-auto w-full text-center my-10'>
       <div className="inline-block">
-        <h1 className="title-part">
-          How it <span className="highlighted-word">Work</span>
+        <h1 className="working-info-title">
+          {text} <span className="working-info-highlighted-word">{highlighed}</span>
         </h1>
-        <p className="description-part">Start Bingeing in 3 Simple Steps</p>
+        <p className="working-info-description">{description}</p>
       </div>
     </section>
   );

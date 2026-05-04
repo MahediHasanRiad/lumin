@@ -1,7 +1,7 @@
 import React from "react";
-import "../style/streaming.style.css";
 import LogoTypeButton from "../../utils/logo-type-button";
 import WatchingInfo from "../../utils/watching-info";
+import "../style/streaming.style.css";
 
 function Streaming() {
   return (
@@ -19,8 +19,8 @@ function Streaming() {
       </p>
 
       {/* info part  */}
-      <section className="grid grid-cols-2 gap-4 my-8">
-        <section className="grid border-r-2 border-dashed border-[#DD2C91] pl-4">
+      <section className="grid md:grid-cols-2 gap-4 my-8">
+        <section className="grid lg:border-r-2 lg:border-dashed lg:border-[#DD2C91] pl-4">
           <WatchingInfo
             number={"1"}
             text={"Daily Reward"}
@@ -36,7 +36,7 @@ function Streaming() {
             }
           />
         </section>
-        <section className="grid">
+        <section className="grid pl-4">
           <WatchingInfo
             number={"1"}
             text={"Daily Reward"}

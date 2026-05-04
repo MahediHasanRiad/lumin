@@ -1,0 +1,59 @@
+.experienct-contect {
+  width: 70%;
+  max-width: 95%;
+  margin: 150px auto 0 auto;
+  border: '1px solid blue';
+  border-radius: 24px;
+  border: 2px solid #ffffff33;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  margin-bottom: 50px;
+  background:
+    linear-gradient(#0a0e4a, #0a0e4a) padding-box,
+    linear-gradient(to right, #923cb5, #00d2ff, #baff00) border-box;
+}
+
+
+.benefits-card {
+  width: 35%;
+  margin: 0 auto;
+  display: inline-block;
+  padding: 15px; /* actual content spacing */
+
+  border: 2px solid transparent; /* important */
+  border-radius: 24px;
+  color: white;
+
+  background:
+    linear-gradient(#0a0e4a, #0a0e4a) padding-box,
+    linear-gradient(to right, #923cb5, #00d2ff, #baff00) border-box;
+}
+
+.benefits-card-inner {
+  /* background-color: #0c0d21; */
+  border-radius: 22px; /* slightly smaller */
+  padding: 32px;
+  color: white;
+}
+
+.benefits-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.benefits-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.benefits-list li {
+  font-size: 18px;
+  margin-bottom: 12px;
+  opacity: 0.9;
+}

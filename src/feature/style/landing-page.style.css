@@ -1,24 +1,31 @@
 /* Update these specific parts in landing-page.style.css */
-
 .hero-container {
+  min-height: 100vh;
+  width: 100%;
   margin: 0;
   padding: 0;
-  width: 100%;
-  min-height: 100vh; 
-  position: relative;
+
+  /* Fallback if bg.png fails to load */
+  background-color: #050814;
 
   background:
-    url("/bg.png") repeat,
-    linear-gradient(180deg, #000252 0%, #000114 100%);
-  background-blend-mode: soft-light;
-  background-color: #000114;
-  /* Ensure this container grows with content */
+    radial-gradient(circle at 20% 30%, rgba(255, 45, 149, 0.35), transparent 40%), 
+    radial-gradient(circle at 80% 40%, rgba(0, 210, 255, 0.35), transparent 45%),  
+    url("./bg.png"),                                                              
+    radial-gradient(circle at 50% 80%, rgba(10, 15, 60, 0.9), #050814 70%);
+
+  background-blend-mode: screen, screen, normal, overlay;
+  background-blend-mode: screen, screen, overlay, normal;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   display: flex;
   flex-direction: column;
 }
 
 .glow-wrapper {
-  /* This container stays pinned to the hero area */
   position: absolute;
   inset: 0;
   z-index: 1; 
@@ -31,15 +38,13 @@
 .glow-noise {
   position: absolute;
   inset: 0;
-  /* Fixed path to public folder */
   background: url("./bg.png") repeat;
-  /* opacity: 0.3; Subtle noise layer */
   z-index: 0;
 }
 
 .hero-content {
   position: relative;
-  /* Must be higher than glow-wrapper z-index */
   z-index: 2; 
   width: 100%;
+  padding: 0px;
 }
