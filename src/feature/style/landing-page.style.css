@@ -1,12 +1,14 @@
 /* landing-page.style.css */
 
 .hero-container {
-  min-height: 100vh;
+ min-height: 100vh;
   width: 100%;
-  position: relative;
-  overflow: hidden;
-  background: url('../../../public/bg.png');
-  background: linear-gradient(180deg, #000252 0%, #000114 100%);
+  position: relative; 
+  background:
+    url("/bg.png"),            /* ✅ correct public path */
+    linear-gradient(180deg, #000252 0%, #000114 100%);
+  background-blend-mode: soft-light;  /* ✅ preserves gradient */
+  background-color: #000114;
 }
 
 .glow-pink {
@@ -15,7 +17,11 @@
   left: -30%;
   width: 55vw;
   height: 55vw;
-  background: radial-gradient(circle, rgba(220, 30, 140, 0.75) 0%, transparent 90%);
+  background: radial-gradient(
+    circle,
+    rgba(220, 30, 140, 0.75) 0%,
+    transparent 90%
+  );
   filter: blur(110px);
   pointer-events: none;
   z-index: 0;
@@ -27,7 +33,11 @@
   right: -30%;
   width: 60vw;
   height: 60vw;
-  background: radial-gradient(circle, rgba(50, 35, 255, 0.6) 0%, transparent 90%);
+  background: radial-gradient(
+    circle,
+    rgba(50, 35, 255, 0.6) 0%,
+    transparent 90%
+  );
   filter: blur(110px);
   pointer-events: none;
   z-index: 0;

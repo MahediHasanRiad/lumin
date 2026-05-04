@@ -10,10 +10,12 @@ import './style/landing-page.style.css'
 function LandingPage() {
   return (
     <div className="hero-container">
-      <div className="glow-pink" />
-      <div className="glow-blue" />
-      <div className="glow-noise" />
-      <div className="hero-content">
+      <div className="glow-wrapper">       {/* ✅ glows live here */}
+        <div className="glow-pink" />
+        <div className="glow-blue" />
+        <div className="glow-noise" />
+      </div>
+      <div className="hero-content">       {/* ✅ content never hidden */}
         <HeaderPart />
         <HeroPart />
         <MobileScreen />
