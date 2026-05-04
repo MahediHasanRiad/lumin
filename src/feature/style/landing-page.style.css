@@ -1,57 +1,45 @@
-/* landing-page.style.css */
+/* Update these specific parts in landing-page.style.css */
 
 .hero-container {
- min-height: 100vh;
+  margin: 0;
+  padding: 0;
   width: 100%;
-  position: relative; 
+  min-height: 100vh; 
+  position: relative;
+
   background:
-    url("/bg.png"),            /* ✅ correct public path */
+    url("/bg.png") repeat,
     linear-gradient(180deg, #000252 0%, #000114 100%);
-  background-blend-mode: soft-light;  /* ✅ preserves gradient */
+  background-blend-mode: soft-light;
   background-color: #000114;
+  /* Ensure this container grows with content */
+  display: flex;
+  flex-direction: column;
 }
 
-.glow-pink {
+.glow-wrapper {
+  /* This container stays pinned to the hero area */
   position: absolute;
-  top: 10%;
-  left: -30%;
-  width: 55vw;
-  height: 55vw;
-  background: radial-gradient(
-    circle,
-    rgba(220, 30, 140, 0.75) 0%,
-    transparent 90%
-  );
-  filter: blur(110px);
+  inset: 0;
+  z-index: 1; 
+  overflow: hidden;
   pointer-events: none;
-  z-index: 0;
-}
-
-.glow-blue {
-  position: absolute;
-  top: 10%;
-  right: -30%;
-  width: 60vw;
-  height: 60vw;
-  background: radial-gradient(
-    circle,
-    rgba(50, 35, 255, 0.6) 0%,
-    transparent 90%
-  );
-  filter: blur(110px);
-  pointer-events: none;
-  z-index: 0;
+  background:
+    url("/bg.png") repeat,
 }
 
 .glow-noise {
   position: absolute;
   inset: 0;
-  background: url("../../../public/bg.png") repeat;
+  /* Fixed path to public folder */
+  background: url("./bg.png") repeat;
+  /* opacity: 0.3; Subtle noise layer */
   z-index: 0;
 }
 
 .hero-content {
   position: relative;
-  z-index: 1;
+  /* Must be higher than glow-wrapper z-index */
+  z-index: 2; 
   width: 100%;
 }

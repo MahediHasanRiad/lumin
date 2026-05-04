@@ -1,17 +1,19 @@
 .content-section {
-  width: 1200px;
-  height: 624px;
-  margin: 276px auto 0 auto; /* Top: 276px, Horizontal: auto, Bottom: 0 */
+  width: 70%;
+  /* height: 624px; */
+  margin: 276px auto 0 auto;
   border-radius: 24px;
-  border: 2px solid #333;    /* Note: Border needs a style and color to be visible */
+  background-image:
+    linear-gradient(#0a0e4a, #0a0e4a),
+    linear-gradient(to right, #923cb5, #00d2ff, #baff00);
   padding: 40px;
   gap: 10px;
-  display: flex;             /* Gap only works if display is flex or grid */
-  flex-direction: column;    /* Stack children vertically by default */
-  
-  /* Removed 'left' as it interferes with margin: auto centering */
+  display: flex;
+  flex-direction: column;
+
   position: relative;
   color: white;
+    
 }
 
 .heading {
@@ -21,12 +23,13 @@
   line-height: 150%;
   display: block;
   margin: 0 auto;
+  color: white;
 }
 
 .highlight-text {
   color: yellow;
   font-style: italic;
-  font-family: 'Playfair Display', serif; /* Added serif as a fallback */
+  font-family: "Playfair Display", serif;
 }
 
 /* style.css */
@@ -35,7 +38,10 @@
   font-size: 24px;
   line-height: 150%;
   letter-spacing: 0%;
-  
+  width: 70%;
+  margin: 0 auto;
   display: flex;
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }

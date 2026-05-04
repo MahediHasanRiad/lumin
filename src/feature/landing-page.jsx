@@ -5,17 +5,17 @@ import Streaming from "./component/streaming";
 import Working from "./component/working";
 import Experience from "./component/experience";
 import MobileScreen from "./component/mobile-screen";
-import './style/landing-page.style.css'
+import "./style/landing-page.style.css";
 
 function LandingPage() {
   return (
-    <div className="hero-container">
-      <div className="glow-wrapper">       {/* ✅ glows live here */}
+    <section className="hero-container">
+      <div className="glow-wrapper">
         <div className="glow-pink" />
         <div className="glow-blue" />
         <div className="glow-noise" />
       </div>
-      <div className="hero-content">       {/* ✅ content never hidden */}
+      <div className="hero-content">
         <HeaderPart />
         <HeroPart />
         <MobileScreen />
@@ -23,7 +23,7 @@ function LandingPage() {
         <Working />
         <Experience />
       </div>
-    </div>
+    </section>
   );
 }
 

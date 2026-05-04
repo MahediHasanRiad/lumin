@@ -10,7 +10,7 @@ function HeroPart() {
       <LogoTypeButton text={"THE ULTIMATE POCKET CINEMA"} />
 
       {/* heading text  */}
-      <div style={{ marginBottom: "20px" }}>
+      <div style={{ marginBottom: "20px", width: '60%', margin: 'auto' }}>
         <p className="hero-title">Cinematic Stories, Right in</p>
         <p className="hero-text">Your Pocket.</p>
 
