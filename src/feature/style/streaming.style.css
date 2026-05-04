@@ -11,4 +11,31 @@
   
   /* Removed 'left' as it interferes with margin: auto centering */
   position: relative;
+  color: white;
+}
+
+.heading {
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 150%;
+  display: block;
+  margin: 0 auto;
+}
+
+.highlight-text {
+  color: yellow;
+  font-style: italic;
+  font-family: 'Playfair Display', serif; /* Added serif as a fallback */
+}
+
+/* style.css */
+.subtext {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  
+  display: flex;
+  align-items: center; 
 }

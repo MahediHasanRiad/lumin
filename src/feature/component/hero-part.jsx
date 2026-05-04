@@ -5,18 +5,9 @@ import LogoTypeButton from "../../utils/logo-type-button";
 
 function HeroPart() {
   return (
-    <section
-      style={{
-        width: "1020px",
-        height: "296px",
-        gap: "16px",
-        margin: "100px auto",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <section className="hero-content">
       {/* logo type button  */}
-      <LogoTypeButton text={'THE ULTIMATE POCKET CINEMA'} />
+      <LogoTypeButton text={"THE ULTIMATE POCKET CINEMA"} />
 
       {/* heading text  */}
       <div style={{ marginBottom: "20px" }}>

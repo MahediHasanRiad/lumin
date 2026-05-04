@@ -1,0 +1,47 @@
+/* landing-page.style.css */
+
+.hero-container {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: url('../../../public/bg.png');
+  background: linear-gradient(180deg, #000252 0%, #000114 100%);
+}
+
+.glow-pink {
+  position: absolute;
+  top: 10%;
+  left: -30%;
+  width: 55vw;
+  height: 55vw;
+  background: radial-gradient(circle, rgba(220, 30, 140, 0.75) 0%, transparent 90%);
+  filter: blur(110px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.glow-blue {
+  position: absolute;
+  top: 10%;
+  right: -30%;
+  width: 60vw;
+  height: 60vw;
+  background: radial-gradient(circle, rgba(50, 35, 255, 0.6) 0%, transparent 90%);
+  filter: blur(110px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.glow-noise {
+  position: absolute;
+  inset: 0;
+  background: url("../../../public/bg.png") repeat;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}

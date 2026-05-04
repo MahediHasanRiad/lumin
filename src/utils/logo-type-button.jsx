@@ -1,5 +1,5 @@
 import React from 'react'
-import '../feature/style/hero.style.css'
+import './style/logo-type-btn.style.css'
 
 function LogoTypeButton({text}) {
   return (

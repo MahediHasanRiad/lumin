@@ -1,6 +1,6 @@
 .main {
-  width: 1824px;
-  height: 80px;
+  width: 90%;
+  height: 60px;
   padding-top: 48px;
   display: flex;
   justify-content: space-between;
@@ -16,9 +16,10 @@
 
 .button {
   background-color: #dd2c91;
-  width: 161px;
-  height: 48px;
-  border-radius: 30px; 
+  width: clamp(120px, 10vw, 161px);
+  height: clamp(40px, 5vw, 48px);
+  font-size: clamp(10px, 1vw, 15px);
+  border-radius: 30px;
   padding: 12px 24px; 
   color: white;
   cursor: pointer;
@@ -26,4 +27,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.logo-wrapper {
+  width: clamp(100px, 8vw, 137px); 
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
